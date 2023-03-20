@@ -25,3 +25,13 @@ jobs:
 
       - name: Run tests
         run: npm run test
+
+      - name: Check if PR is mergeable
+        uses: nwtgck/pull-request-mergeable-action@v2.1.1
+        id: pr
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          fail-on-non-mergeable: true
+
+      - name: Fail if PR is not mergeable
+        run: exit ${{ steps.pr.outputs.non_mergeable }}
