@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "test:cov": "vitest run --coverage"
+    "test:cov": "vitest run --coverage",
+    "lint": "eslint --fix --ext .js,.jsx,.json src/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@vitest/coverage-c8": "^0.29.7",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
     "vitest": "^0.29.7"
   }
 }
