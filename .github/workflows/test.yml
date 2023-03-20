@@ -23,5 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Roda os Lint
+        run: npm run lint
+
       - name: Roda os testes
         run: npm run test
