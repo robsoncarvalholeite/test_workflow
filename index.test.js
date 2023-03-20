@@ -5,6 +5,6 @@ describe("Teste Inicial", () => {
   it("Teste 1", () => {
     const result = bla();
 
-    expect(result).toBeTruthy();
+    expect(result).not.toBeTruthy();
   });
 });
