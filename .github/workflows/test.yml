@@ -1,5 +1,4 @@
-name: Test
-
+name: Github Actions CI
 on:
   push:
     branches:
@@ -8,7 +7,8 @@ on:
     branches:
       - develop
 jobs:
-  test:
+  lint_test:
+    name: Lint and Test
     runs-on: ubuntu-latest
 
     steps:
@@ -21,10 +21,10 @@ jobs:
           node-version: "18.x"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Roda os Lint
+      - name: Run Lint
         run: npm run lint
 
-      - name: Roda os testes
+      - name: Run Test Suite
         run: npm run test

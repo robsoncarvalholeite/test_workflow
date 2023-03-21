@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { bla } from '.';
+import bla from '.';
 
 describe('Teste Inicial', () => {
   it('Teste 1', () => {
