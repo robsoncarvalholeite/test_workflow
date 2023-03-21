@@ -1,3 +1,3 @@
-export default function bla() {
+export function bla() {
   return true;
 }
