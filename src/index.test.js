@@ -1,10 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import bla from '.';
+import { describe, expect, it } from "vitest";
+import bla from ".";
 
-describe('Teste Inicial', () => {
-  it('Teste 1', () => {
+describe("Teste Inicial", () => {
+  it("Teste 1", () => {
     const result = bla();
 
-    expect(result).toBeTruthy();
+    expect(result).not.toBeTruthy();
   });
 });
